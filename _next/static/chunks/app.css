@@ -566,10 +566,6 @@
     top: calc(var(--spacing) * 0);
   }
 
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
-
   .top-1\.5 {
     top: calc(var(--spacing) * 1.5);
   }
@@ -706,10 +702,6 @@
     bottom: calc(var(--spacing) * 0);
   }
 
-  .bottom-1 {
-    bottom: calc(var(--spacing) * 1);
-  }
-
   .bottom-2 {
     bottom: calc(var(--spacing) * 2);
   }
@@ -762,16 +754,8 @@
     left: calc(var(--spacing) * 4);
   }
 
-  .left-5 {
-    left: calc(var(--spacing) * 5);
-  }
-
   .left-7 {
     left: calc(var(--spacing) * 7);
-  }
-
-  .left-\[3px\] {
-    left: 3px;
   }
 
   .left-\[18px\] {
@@ -1100,10 +1084,6 @@
     margin-bottom: 26px;
   }
 
-  .mb-\[30px\] {
-    margin-bottom: 30px;
-  }
-
   .-ml-4 {
     margin-left: calc(var(--spacing) * -4);
   }
@@ -1379,11 +1359,6 @@
   .size-\[20px\] {
     width: 20px;
     height: 20px;
-  }
-
-  .size-\[21px\] {
-    width: 21px;
-    height: 21px;
   }
 
   .size-\[22px\] {
@@ -1806,10 +1781,6 @@
 
   .w-max {
     width: max-content;
-  }
-
-  .w-px {
-    width: 1px;
   }
 
   .max-w-\(--skeleton-width\) {
@@ -3291,16 +3262,6 @@
     }
   }
 
-  .bg-brand-solar\/80 {
-    background-color: var(--comet-brand-color-solar);
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-brand-solar\/80 {
-      background-color: color-mix(in oklab, var(--comet-brand-color-solar) 80%, transparent);
-    }
-  }
-
   .bg-brand-solar\/90 {
     background-color: var(--comet-brand-color-solar);
   }
@@ -3387,16 +3348,6 @@
     }
   }
 
-  .bg-brand-stature-ink\/60 {
-    background-color: #0f273099;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-brand-stature-ink\/60 {
-      background-color: color-mix(in oklab, var(--color-brand-stature-ink) 60%, transparent);
-    }
-  }
-
   .bg-brand-stature-ink\/70 {
     background-color: #0f2730b3;
   }
@@ -3434,16 +3385,6 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-brand-stature\/10 {
       background-color: color-mix(in oklab, var(--comet-brand-color-stature) 10%, transparent);
-    }
-  }
-
-  .bg-brand-stature\/12 {
-    background-color: var(--comet-brand-color-stature);
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-brand-stature\/12 {
-      background-color: color-mix(in oklab, var(--comet-brand-color-stature) 12%, transparent);
     }
   }
 
@@ -4384,10 +4325,6 @@
 
   .pl-0 {
     padding-left: calc(var(--spacing) * 0);
-  }
-
-  .pl-1 {
-    padding-left: calc(var(--spacing) * 1);
   }
 
   .pl-2 {
@@ -5468,10 +5405,6 @@
     opacity: .85;
   }
 
-  .opacity-90 {
-    opacity: .9;
-  }
-
   .opacity-95 {
     opacity: .95;
   }
@@ -5654,16 +5587,6 @@
   @supports (color: color-mix(in lab, red, red)) {
     .ring-brand-proximity\/20 {
       --tw-ring-color: color-mix(in oklab, var(--comet-brand-color-proximity) 20%, transparent);
-    }
-  }
-
-  .ring-brand-solar\/15 {
-    --tw-ring-color: var(--comet-brand-color-solar);
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .ring-brand-solar\/15 {
-      --tw-ring-color: color-mix(in oklab, var(--comet-brand-color-solar) 15%, transparent);
     }
   }
 
@@ -5858,12 +5781,6 @@
 
   .transition-\[gap\] {
     transition-property: gap;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-
-  .transition-\[height\] {
-    transition-property: height;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
@@ -6337,12 +6254,6 @@
   }
 
   @media (hover: hover) {
-    .group-hover\/nav\:pointer-events-auto:is(:where(.group\/nav):hover *) {
-      pointer-events: auto;
-    }
-  }
-
-  @media (hover: hover) {
     .group-hover\/nav\:max-w-\[180px\]:is(:where(.group\/nav):hover *) {
       max-width: 180px;
     }
@@ -6507,21 +6418,8 @@
     background-color: var(--comet-brand-color-solar);
   }
 
-  .group-data-\[state\=active\]\/item\:text-brand-solar-deep:is(:where(.group\/item)[data-state="active"] *) {
-    color: var(--color-brand-solar-deep);
-  }
-
-  .group-data-\[state\=active\]\/item\:text-brand-stature:is(:where(.group\/item)[data-state="active"] *) {
-    color: var(--comet-brand-color-stature);
-  }
-
   .group-data-\[state\=active\]\/item\:text-white:is(:where(.group\/item)[data-state="active"] *) {
     color: var(--color-white);
-  }
-
-  .group-data-\[state\=active\]\/item\:ring-\[5px\]:is(:where(.group\/item)[data-state="active"] *) {
-    --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(5px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
   .group-data-\[state\=closed\]\/trigger\:hidden:is(:where(.group\/trigger)[data-state="closed"] *) {
@@ -6535,16 +6433,6 @@
   @supports (color: color-mix(in lab, red, red)) {
     .group-data-\[state\=done\]\/item\:bg-brand-solar\/70:is(:where(.group\/item)[data-state="done"] *) {
       background-color: color-mix(in oklab, var(--comet-brand-color-solar) 70%, transparent);
-    }
-  }
-
-  .group-data-\[state\=done\]\/item\:bg-brand-solar\/80:is(:where(.group\/item)[data-state="done"] *) {
-    background-color: var(--comet-brand-color-solar);
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .group-data-\[state\=done\]\/item\:bg-brand-solar\/80:is(:where(.group\/item)[data-state="done"] *) {
-      background-color: color-mix(in oklab, var(--comet-brand-color-solar) 80%, transparent);
     }
   }
 
@@ -8275,12 +8163,6 @@
   @media (prefers-reduced-motion: reduce) {
     .motion-reduce\:animate-none {
       animation: none;
-    }
-  }
-
-  @media not (min-width: 980px) {
-    .max-\[980px\]\:order-first {
-      order: -9999;
     }
   }
 
@@ -10174,11 +10056,25 @@
   opacity: 1;
 }
 
+.wipe-init {
+  clip-path: inset(0 0 100%);
+  transition: clip-path .9s cubic-bezier(.22, .61, .36, 1);
+}
+
+.wipe-init.reveal-in {
+  clip-path: inset(0);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal-init, .reveal-fade {
     opacity: 1;
     transition: none;
     transform: none;
+  }
+
+  .wipe-init {
+    clip-path: none;
+    transition: none;
   }
 }
 
