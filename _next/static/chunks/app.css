@@ -4179,6 +4179,10 @@
     padding-block: .2rem;
   }
 
+  .py-\[5px\] {
+    padding-block: 5px;
+  }
+
   .py-\[7px\] {
     padding-block: 7px;
   }
@@ -5652,6 +5656,10 @@
     }
   }
 
+  .ring-brand-stature {
+    --tw-ring-color: var(--comet-brand-color-stature);
+  }
+
   .ring-brand-stature\/10 {
     --tw-ring-color: var(--comet-brand-color-stature);
   }
@@ -6356,6 +6364,12 @@
       .group-hover\/item\:bg-brand-stature\/80:is(:where(.group\/item):hover *) {
         background-color: color-mix(in oklab, var(--comet-brand-color-stature) 80%, transparent);
       }
+    }
+  }
+
+  @media (hover: hover) {
+    .group-hover\/item\:text-brand-stature:is(:where(.group\/item):hover *) {
+      color: var(--comet-brand-color-stature);
     }
   }
 
