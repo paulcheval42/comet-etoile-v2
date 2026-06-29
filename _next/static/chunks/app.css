@@ -1442,6 +1442,10 @@
     height: var(--cell-size);
   }
 
+  .h-0\.5 {
+    height: calc(var(--spacing) * .5);
+  }
+
   .h-1 {
     height: calc(var(--spacing) * 1);
   }
@@ -3435,6 +3439,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-brand-stature\/35 {
       background-color: color-mix(in oklab, var(--comet-brand-color-stature) 35%, transparent);
+    }
+  }
+
+  .bg-brand-stature\/55 {
+    background-color: var(--comet-brand-color-stature);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-brand-stature\/55 {
+      background-color: color-mix(in oklab, var(--comet-brand-color-stature) 55%, transparent);
     }
   }
 
@@ -6312,6 +6326,12 @@
   }
 
   @media (hover: hover) {
+    .group-hover\/item\:w-7:is(:where(.group\/item):hover *) {
+      width: calc(var(--spacing) * 7);
+    }
+  }
+
+  @media (hover: hover) {
     .group-hover\/item\:bg-brand-stature\/70:is(:where(.group\/item):hover *) {
       background-color: var(--comet-brand-color-stature);
     }
@@ -6319,6 +6339,18 @@
     @supports (color: color-mix(in lab, red, red)) {
       .group-hover\/item\:bg-brand-stature\/70:is(:where(.group\/item):hover *) {
         background-color: color-mix(in oklab, var(--comet-brand-color-stature) 70%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .group-hover\/item\:bg-brand-stature\/80:is(:where(.group\/item):hover *) {
+      background-color: var(--comet-brand-color-stature);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .group-hover\/item\:bg-brand-stature\/80:is(:where(.group\/item):hover *) {
+        background-color: color-mix(in oklab, var(--comet-brand-color-stature) 80%, transparent);
       }
     }
   }
