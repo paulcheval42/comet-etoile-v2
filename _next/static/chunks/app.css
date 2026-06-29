@@ -5946,6 +5946,10 @@
     transition-timing-function: var(--ease-out);
   }
 
+  .will-change-transform {
+    will-change: transform;
+  }
+
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
@@ -10029,8 +10033,18 @@
   transform: none;
 }
 
+.reveal-fade {
+  opacity: 0;
+  will-change: opacity;
+  transition: opacity .6s;
+}
+
+.reveal-fade.reveal-in {
+  opacity: 1;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .reveal-init {
+  .reveal-init, .reveal-fade {
     opacity: 1;
     transition: none;
     transform: none;
